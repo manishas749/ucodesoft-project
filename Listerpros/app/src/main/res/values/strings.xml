@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">listerpros</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="EmailAddress">Email Address</string>
+    <string name="password">Password</string>
+    <string name="ForgotPassword">Forgot password?</string>
+    <string name="SignIn">Sign In</string>
+    <string name="welcome_login">Welcome Login</string>
+
+
+    <!-- TODO: My Account Screen Strings -->
+
+    <string name="ForgetPassword">Forgot Password</string>
+    <string name="Send">Send</string>
+    <string name="general">GENERAL</string>
+    <string name="property">My Account</string>
+    <string name="logout">Logout</string>
+    <string name="profile_set">Profile Settings</string>
+    <string name="update_and_">Update and modify your profile</string>
+    <string name="privacy">Privacy</string>
+    <string name="change_your">Change your password</string>
+
+    <!-- TODO: Profile Settings Screen Strings -->
+    <string name="personal_in">Personal Information</string>
+    <string name="first_name">First Name</string>
+    <string name="apply">Update Profile</string>
+    <string name="cell_phone">Cell Phone</string>
+    <string name="email_address">Email Address</string>
+    <string name="last_name">Last Name</string>
+    <string name="Timesheet">Timesheet</string>
+    <string name="two">02</string>
+    <string name="thursday">Thursday</string>
+    <string name="year">Dec, 2021</string>
+    <string name="time">11h 24m</string>
+    <string name="StopTimer">Stop Timer</string>
+    <string name="TimeSheets">Timesheet</string>
+    <string name="day">Thursday</string>
+    <string name="StartTimer">Start Timer</string>
+    <string name="time_start">9:30 AM</string>
+    <string name="time_end_time">11:26 AM</string>
+    <string name="two_hour">2h 54m</string>
+    <string name="difference">-</string>
+    <string name="MyJobs">My Jobs</string>
+    <string name="image">image description</string>
+    <string name="M">M</string>
+    <string name="nz">1616 N Alta Mesa Dr, AZ</string>
+    <string name="InProgress">In-progress</string>
+    <string name="enterFirstName">Please enter first name</string>
+    <string name="enterLastName">Please enter last name</string>
+    <string name="enterEmailAddress">Please enter email address</string>
+    <string name="enterCellPhoneNumber">Please enter cell phone number</string>
+    <string name="capitalFirstName">Are you sure you entered your first name correctly?</string>
+    <string name="capitalLastName">Are you sure you entered your last name correctly?</string>
+    <string name="invalidEmail">Not a valid email address</string>
+    <string name="invalidPhone">Cell phone number is not valid</string>
+    <string name="settingsValid">Profile Setting is Valid</string>
+
+
+    <!-- TODO: Job Details Screen Strings -->
+    <string name="right_title">Add Note</string>
+    <string name="large_title">Job Details</string>
+    <string name="anytime_3hr">#2 ANYTIME 3HR Photos Vacant - Keith Reece HomeSmart</string>
+    <string name="on_the_way">Select Status</string>
+    <string name="thursday_ap">December 07, 2021</string>
+    <string name="Anytime_ap">Anytime Appointment</string>
+    <string name="meet_again">Meet Agent</string>
+    <string name="vacant">Vacant</string>
+    <string name="address">0933 Alene Glens Apt. 485, New York</string>
+    <string name="notes_">Notes:</string>
+    <string name="user_name">Jorden</string>
+    <string name="pm_december">03:25 PM December 30, 2021</string>
+    <string name="professional">Professional Photos:- A8Aut quia porro dolorum repellat. Rem sunt  qui sed quia neque voluptas vitae.</string>
+    <string name="virtual_twi">Virtual Twilight:-</string>
+    <string name="virtual_twi1">\u00E2\u0080\u00A8Aut quia porro dolorum repellat. Rem sunt  qui sed quia neque voluptas vitae.</string>
+    <string name="notes_my_job_task">My Job Tasks</string>
+    <string name="label1">Professional Photos</string>
+    <string name="labelvir">Virtual Twilight</string>
+    <string name="rogelio_kuh">Rogelio Kuhic</string>
+    <string name="reason_for_skip">Reason for skipped</string>
+    <string name="reason_stop_skip_note">Eius amet sint vel odio volutas architecto hella beat occaecati. Perferendis iusto tomato tam explicabo moy ea sint illo. Rerum ad delectus eius quidem.</string>
+    <string name="hdphoto">HD Photo Version</string>
+    <string name="label3hr">3 Hour Photo Delivery</string>
+    <string name="skip">Skip</string>
+    <string name="done">Done</string>
+    <string name="complete">Complete</string>
+    <string name="thursday_ap_gate_code">Gate Code:</string>
+    <string name="profess">Professional Photos:-A8Aut quia porro dolorum repellat. Rem sunt  qui sed quia neque voluptas vitae.</string>
+
+    <!-- TODO: Privacy Screen Strings -->
+    <string name="backarror">Back Arrow</string>
+    <string name="currentPassword">Current Password</string>
+    <string name="newPassword">New Password</string>
+    <string name="confirmPassword">Confirm Password</string>
+    <string name="updatePassword">Update Password</string>
+    <string name="des">des</string>
+    <string name="add_notes">Add Note</string>
+    <string name="submit">Submit</string>
+    <string name="job_task">Job Task</string>
+    <string name="startTimer">Start Timer</string>
+    <string name="stopTimer">Stop Timer</string>
+    <string name="notMatched">New and confirm password does not match</string>
+    <string name="passwordLength">Enter minimum 8 characters and it should contain upper, lower and digit letter</string>
+    <string name="currentPasswordIncorrect">Current password is incorrect</string>
+    <string name="passwordMatched">New and confirm password matched</string>
+    <string name="oldPassword">atlanta0490</string>
+
+    <!-- TODO: Login Screen Strings -->
+    <string name="provideEmailPassword">Please provide email and password</string>
+    <string name="enterPassword">Please enter password</string>
+    <string name="shortPassword">Password is short</string>
+    <string name="noInternet">No Internet</string>
+    <string name="emailId">manishas749@gmail.com</string>
+    <string name="passwordId">atlanta0490</string>
+    <string name="loginSuccessful">Login Successful</string>
+    <string name="invalidEmailPassword">Invalid Email id or Password</string>
+    <string name="skipped">Skipped</string>
+    <string name="pleaseEnterSomthing">Please enter something</string>
+    <string name="pleaseComplete">please complete your task</string>
+    <string name="completed">All given task are completed</string>
+    <string name="validEmail">Valid Email Address</string>
+    <string name="pleaseEnterEmail">Please enter email address</string>
+    <string name="reached">Reached</string>
+    <string name="on_the_way_status">On the way</string>
+    <string name="Please_Wait">Please Wait...</string>
+    <string name="Professional_Photos">Professional Photos:-</string>
+    <string name="aut_professional">A8Aut quia porro dolorum repellat. Rem sunt  qui sed quia neque voluptas vitae.</string>
+    <string name="MyAccount">My Account</string>
+    <string name="TimeSheet">Timesheet</string>
+    <string name="inProgress">In-progress</string>
+    <string name="yellow">Yellow</string>
+    <string name="newColor">New</string>
+    <string name="greenColor">Green</string>
+    <string name="blueColor">Blue</string>
+    <string name="invalidPassword">Password is invalid</string>
+    <string name="networkFailed">Network failed</string>
+    <string name="Notes">Notes</string>
+    <string name="Optional">Optional</string>
+    <string name="tryAgain">Please try Again </string>
+    <string name="Ontheway">On the way</string>
+    <string name="noteAdded">Note Added Successfully</string>
+    <string name="noteFound">Not Found</string>
+    <string name="notemodified">Note Modified successfully</string>
+    <string name="addnotes">Add Note</string>
+    <string name="skip_note">Add Skip Note</string>
+    <string name="location_update_reached">REACHED</string>
+    <string name="location_update_on_the_way">ON THE WAY</string>
+    <string name="job_status_completed">Completed</string>
+    <string name="please_select_on_location">Please select on Location</string>
+    <string name="job_task_completed">COMPLETED</string>
+
+
+</resources>

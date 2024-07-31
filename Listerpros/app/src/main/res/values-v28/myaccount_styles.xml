@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="general">
+        <item name="android:textSize">13sp</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="android:textColor">#77869E</item>
+        <item name="fontFamily">@font/manrope_extralight</item>
+        <item name="android:textFontWeight">200</item>
+    </style>
+</resources>

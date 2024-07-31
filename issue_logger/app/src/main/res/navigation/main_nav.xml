@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/logoFragment">
+
+    <fragment
+        android:id="@+id/mobileVerificationFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.MobileVerificationFragment"
+        android:label="fragment_mobile_verification"
+        tools:layout="@layout/fragment_mobile_verification">
+
+        <action
+            android:id="@+id/action_mobileVerificationFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/mobileVerificationFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mobileVerificationFragment_to_signingUpFragment2"
+            app:destination="@id/signingUpFragment"
+            app:popUpTo="@id/mobileVerificationFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/newComplaintFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.NewComplaintFragment"
+        android:label="NewComplaintFragment" />
+    <fragment
+        android:id="@+id/logoFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.LogoFragment"
+        android:label="fragment_logo"
+        tools:layout="@layout/fragment_logo">
+        <action
+            android:id="@+id/action_logoFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/logoFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_logoFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/logoFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_mobileVerificationFragment"
+            app:destination="@id/mobileVerificationFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_mainFragment_to_newComplaintFragment"
+            app:destination="@id/newComplaintFragment"
+            app:enterAnim="@anim/fui_slide_in_right"
+            app:popExitAnim="@anim/fui_slide_out_left" />
+        <action
+            android:id="@+id/action_mainFragment_to_signingUpFragment"
+            app:destination="@id/signingUpFragment" />
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/signingUpFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.SigningUpFragment"
+        android:label="fragment_signing_up"
+        tools:layout="@layout/fragment_signing_up" >
+        <action
+            android:id="@+id/action_signingUpFragment_to_mobileVerificationFragment"
+            app:destination="@id/mobileVerificationFragment"
+            app:popUpTo="@id/signingUpFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+
+        <action
+            android:id="@+id/action_homeFragment_to_signingUpFragment5"
+            app:destination="@id/signingUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.ucopdesoft.issuelogger.fragments.NotificationFragment"
+        android:label="NotificationFragment" />
+
+</navigation>

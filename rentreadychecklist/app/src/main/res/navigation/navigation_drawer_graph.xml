@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_graph"
+    app:startDestination="@id/newChecklistFragment2">
+
+    <fragment
+        android:id="@+id/newChecklistFragment2"
+        android:name="com.rentreadychecklist.fragments.NewChecklistFragment"
+        android:label="fragment_new_checklist"
+        tools:layout="@layout/fragment_new_checklist" >
+        <action
+            android:id="@+id/action_newChecklistFragment2_to_outsideFormFragment"
+            app:destination="@id/outsideFormFragment"
+          />
+    </fragment>
+    <fragment
+        android:id="@+id/outsideFormFragment"
+        android:name="com.rentreadychecklist.fragments.OutsideFormFragment"
+        android:label="fragment_outside_form"
+        tools:layout="@layout/fragment_outside_form" >
+        <action
+            android:id="@+id/action_outsideFormFragment_to_frontDoorsFormFragment2"
+            app:destination="@id/frontDoorsFormFragment2"
+            app:popUpTo="@id/outsideFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/frontDoorsFormFragment2"
+        android:name="com.rentreadychecklist.fragments.FrontDoorsFormFragment"
+        android:label="fragment_front_doors_form"
+        tools:layout="@layout/fragment_front_doors_form" >
+        <action
+            android:id="@+id/action_frontDoorsFormFragment2_to_garageFormFragment"
+            app:destination="@id/garageFormFragment"
+            app:popUpTo="@id/frontDoorsFormFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_frontDoorsFormFragment2_to_outsideFormFragment"
+            app:destination="@id/outsideFormFragment"
+            app:popUpTo="@id/frontDoorsFormFragment2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/garageFormFragment"
+        android:name="com.rentreadychecklist.fragments.GarageFormFragment"
+        android:label="fragment_garage_form"
+        tools:layout="@layout/fragment_garage_form" >
+        <action
+            android:id="@+id/action_garageFormFragment_to_laundryRoomFormFragment"
+            app:destination="@id/laundryRoomFormFragment"
+            app:popUpTo="@id/garageFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_garageFormFragment_to_frontDoorsFormFragment2"
+            app:destination="@id/frontDoorsFormFragment2"
+            app:popUpTo="@id/garageFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/laundryRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.LaundryRoomFormFragment"
+        android:label="fragment_laundry_room_form"
+        tools:layout="@layout/fragment_laundry_room_form" >
+        <action
+            android:id="@+id/action_laundryRoomFormFragment_to_livingRoomFormFragment"
+            app:destination="@id/livingRoomFormFragment"
+            app:popUpTo="@id/laundryRoomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_laundryRoomFormFragment_to_garageFormFragment"
+            app:destination="@id/garageFormFragment"
+            app:popUpTo="@id/laundryRoomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/livingRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.LivingRoomFormFragment"
+        android:label="fragment_living_room_form"
+        tools:layout="@layout/fragment_living_room_form" >
+        <action
+            android:id="@+id/action_livingRoomFormFragment_to_greatRoomFormFragment"
+            app:destination="@id/greatRoomFormFragment"
+            app:popUpTo="@id/livingRoomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_livingRoomFormFragment_to_laundryRoomFormFragment"
+            app:destination="@id/laundryRoomFormFragment"
+            app:popUpTo="@id/livingRoomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/greatRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.GreatRoomFormFragment"
+        android:label="fragment_great_room_form"
+        tools:layout="@layout/fragment_great_room_form" >
+        <action
+            android:id="@+id/action_greatRoomFormFragment_to_diningRoomFormFragment"
+            app:destination="@id/diningRoomFormFragment"
+            app:popUpTo="@id/greatRoomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_greatRoomFormFragment_to_livingRoomFormFragment"
+            app:destination="@id/livingRoomFormFragment"
+            app:popUpTo="@id/greatRoomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/diningRoomFormFragment"
+        android:name="com.rentreadychecklist.fragments.DiningRoomFormFragment"
+        android:label="fragment_dining_room_form"
+        tools:layout="@layout/fragment_dining_room_form" >
+        <action
+            android:id="@+id/action_diningRoomFormFragment_to_kitchenFormFragment"
+            app:destination="@id/kitchenFormFragment"
+            app:popUpTo="@id/diningRoomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_diningRoomFormFragment_to_greatRoomFormFragment"
+            app:destination="@id/greatRoomFormFragment"
+            app:popUpTo="@id/diningRoomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/kitchenFormFragment"
+        android:name="com.rentreadychecklist.fragments.KitchenFormFragment"
+        android:label="fragment_kitchen_form"
+        tools:layout="@layout/fragment_kitchen_form" >
+        <action
+            android:id="@+id/action_kitchenFormFragment_to_miscellaneousFromFragment"
+            app:destination="@id/miscellaneousFromFragment"
+            app:popUpTo="@id/kitchenFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_kitchenFormFragment_to_diningRoomFormFragment"
+            app:destination="@id/diningRoomFormFragment"
+            app:popUpTo="@id/kitchenFormFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/miscellaneousFromFragment"
+        android:name="com.rentreadychecklist.fragments.MiscellaneousFromFragment"
+        android:label="fragment_miscellaneous_from"
+        tools:layout="@layout/fragment_miscellaneous_from" >
+        <action
+            android:id="@+id/action_miscellaneousFromFragment_to_numberOfBedroomsFragment"
+            app:destination="@id/numberOfBedroomsFragment"
+            app:popUpTo="@id/miscellaneousFromFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_miscellaneousFromFragment_to_kitchenFormFragment"
+            app:destination="@id/kitchenFormFragment"
+            app:popUpTo="@id/miscellaneousFromFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bedroomFormFragment"
+        android:name="com.rentreadychecklist.fragments.BedroomFormFragment"
+        android:label="fragment_bedroom_form"
+        tools:layout="@layout/fragment_bedroom_form" >
+        <action
+            android:id="@+id/action_bedroomFormFragment_to_numberOfBathroomsFragment"
+            app:destination="@id/numberOfBathroomsFragment"
+            app:popUpTo="@id/bedroomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bedroomFormFragment_to_numberOfBedroomsFragment"
+            app:destination="@id/numberOfBedroomsFragment"
+            app:popUpTo="@id/bedroomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/bathroomFormFragment"
+        android:name="com.rentreadychecklist.fragments.BathroomFormFragment"
+        android:label="fragment_bathroom_form"
+        tools:layout="@layout/fragment_bathroom_form" >
+        <action
+            android:id="@+id/action_bathroomFormFragment_to_emailFragment"
+            app:destination="@id/emailFragment"
+            app:popUpTo="@id/bathroomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bathroomFormFragment_to_numberOfBathroomsFragment"
+            app:destination="@id/numberOfBathroomsFragment"
+            app:popUpTo="@id/bathroomFormFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bathroomFormFragment_to_additionalNotesFragment"
+            app:destination="@id/additionalNotesFragment"
+            app:popUpTo="@id/bathroomFormFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberOfBedroomsFragment"
+        android:name="com.rentreadychecklist.fragments.NumberOfBedroomsFragment"
+        android:label="fragment_number_of_bedrooms"
+        tools:layout="@layout/fragment_number_of_bedrooms" >
+        <action
+            android:id="@+id/action_numberOfBedroomsFragment_to_bedroomFormFragment"
+            app:destination="@id/bedroomFormFragment"
+            app:popUpTo="@id/numberOfBedroomsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_numberOfBedroomsFragment_to_miscellaneousFromFragment"
+            app:destination="@id/miscellaneousFromFragment"
+            app:popUpTo="@id/numberOfBedroomsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/numberOfBathroomsFragment"
+        android:name="com.rentreadychecklist.fragments.NumberOfBathroomsFragment"
+        android:label="fragment_number_of_bathrooms"
+        tools:layout="@layout/fragment_number_of_bathrooms" >
+        <action
+            android:id="@+id/action_numberOfBathroomsFragment_to_bathroomFormFragment"
+            app:destination="@id/bathroomFormFragment"
+            app:popUpTo="@id/numberOfBathroomsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_numberOfBathroomsFragment_to_bedroomFormFragment"
+            app:destination="@id/bedroomFormFragment"
+            app:popUpTo="@id/numberOfBathroomsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_numberOfBathroomsFragment_to_bathFragment"
+            app:destination="@id/bathFragment"
+            app:popUpTo="@id/numberOfBathroomsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/emailFragment"
+        android:name="com.rentreadychecklist.fragments.EmailFragment"
+        android:label="fragment_email"
+        tools:layout="@layout/fragment_email" />
+    <dialog
+        android:id="@+id/fixModelSheetFragment"
+        android:name="com.rentreadychecklist.fragments.FixModelSheetFragment"
+        android:label="fragment_fix_model_sheet"
+        tools:layout="@layout/fragment_fix_model_sheet" />
+    <dialog
+        android:id="@+id/okModelSheetFragment"
+        android:name="com.rentreadychecklist.fragments.OkModelSheetFragment"
+        android:label="fragment_ok_model_sheet"
+        tools:layout="@layout/fragment_ok_model_sheet" />
+    <fragment
+        android:id="@+id/bathFragment"
+        android:name="com.rentreadychecklist.fragments.BathFragment"
+        android:label="fragment_bath"
+        tools:layout="@layout/fragment_bath" >
+        <action
+            android:id="@+id/action_bathFragment_to_emailFragment"
+            app:destination="@id/emailFragment"
+            app:popUpTo="@id/bathFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_bathFragment_to_numberOfBathroomsFragment"
+            app:destination="@id/numberOfBathroomsFragment"
+            app:popUpTo="@id/bathFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/additionalNotesFragment"
+        android:name="com.rentreadychecklist.fragments.AdditionalNotesFragment"
+        android:label="fragment_additional_notes"
+        tools:layout="@layout/fragment_additional_notes" >
+        <action
+            android:id="@+id/action_additionalNotesFragment_to_emailFragment"
+            app:destination="@id/emailFragment"
+            app:popUpTo="@id/additionalNotesFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_additionalNotesFragment_to_bathroomFormFragment"
+            app:destination="@id/bathroomFormFragment"
+            app:popUpTo="@id/additionalNotesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

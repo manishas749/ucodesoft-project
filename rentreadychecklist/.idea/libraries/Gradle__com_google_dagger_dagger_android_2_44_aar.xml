@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.dagger:dagger-android:2.44@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/39efc2c9d403510d2c1d453fa8635084/transformed/dagger-android-2.44/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/39efc2c9d403510d2c1d453fa8635084/transformed/dagger-android-2.44/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../FirestorePagination/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.44/579b74563461d15f812c663437a9fd3e91d52252/dagger-android-2.44-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../FirestorePagination/.gradle/caches/modules-2/files-2.1/com.google.dagger/dagger-android/2.44/eee667dd9dcb994389dc5d6a01da9ff5ec3d01c4/dagger-android-2.44-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for PaymentActivity -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#525E9F"
+        android:foregroundTint="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:title="Payment"
+        app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvPaymentMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/jost"
+            android:textColor="#525E9F"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textview_shape"
+            android:hint="Card Number"
+            android:inputType="number"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textview_shape"
+
+            android:clickable="false"
+            android:enabled="false"
+            android:focusable="false"
+            android:hint="0"
+            android:inputType="number"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/black" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+
+            android:background="@drawable/textview_shape"
+            android:hint="Expiry Date (MM/YY)"
+            android:inputType="text"
+            android:paddingHorizontal="10dp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextCVC"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/textview_shape"
+
+            android:hint="CVC"
+            android:inputType="numberPassword"
+            android:paddingHorizontal="10dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmitPayment"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_color"
+            android:backgroundTint="#525E9F"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:letterSpacing="0.01"
+            android:text="Submit Payment"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="emailIntentTypeDir">vnd.android.cursor.dir/email</string>
+    <string name="emailIntentTypeFile">text/html</string>
+    <string name="loggerFile">Logger File</string>
+    <string name="hello">Hello, \n</string>
+    <string name="emailAttachment">Please find the attachment file of log.</string>
+    <string name="sendingEmail">Sending Email...</string>
+
+
+</resources>

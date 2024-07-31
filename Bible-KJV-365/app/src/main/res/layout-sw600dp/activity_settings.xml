@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    android:orientation="vertical"
+    tools:context="com.errolapplications.bible365kjv.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/card_background"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/app_bar"
+            android:elevation="0dp"
+            android:theme="@style/TipCalcAppBarStyle"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bible 365"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/activity_generic_margin_start"
+                android:layout_marginTop="@dimen/activity_generic_margin_small"
+                android:layout_marginBottom="0dp"
+                android:background="#0000"
+                android:gravity="center"
+                android:text="Settings"
+                android:textColor="@color/darker_grey"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/settings"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="0dp"
+                android:background="@color/light_grey" />
+
+            <ScrollView
+                android:id="@+id/sub_one_scroll_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_view"
+                android:layout_margin="0dp"
+                android:orientation="vertical"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:id="@+id/main_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/theme_controls_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginTop="@dimen/activity_generic_margin_start"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:gravity="start"
+                        android:text="Themes"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="@dimen/text_size_22"
+                        android:textStyle="bold" />
+
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/night_reader"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/theme_controls_title"
+                        android:layout_marginStart="@dimen/activity_generic_margin_start"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_end"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:background="#0000"
+                        android:buttonTint="@color/app_bar"
+                        android:text="Night Reader Theme"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/next_title_description_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/night_reader"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_start"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:text="Enabling this feature will turn on the night reader theme to make night time or dim light reading easier on your eyes."
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/next_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/next_title_description_2"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:gravity="start"
+                        android:text="Verse Reader"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="@dimen/text_size_22"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/reader_wake_lock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/next_title"
+                        android:layout_marginStart="@dimen/activity_generic_margin_start"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_end"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:background="#0000"
+                        android:buttonTint="@color/app_bar"
+                        android:text="Keep Screen On While Reading"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/next_title_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/reader_wake_lock"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_start"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:text="Enabling this feature will keep your device from going to sleep while you read Bible verses."
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/notification_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/next_title_description"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:gravity="start"
+                        android:text="Notifications"
+                        android:textColor="@color/darker_grey"
+                        android:textSize="@dimen/text_size_22"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/notifications"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/notification_title"
+                        android:layout_marginStart="@dimen/activity_generic_margin_start"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_end"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:background="#0000"
+                        android:buttonTint="@color/app_bar"
+                        android:text="Receive Verse Notifications"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_24" />
+
+                    <TextView
+                        android:id="@+id/notification_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notifications"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_start"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_start"
+                        android:text="This feature is enabled by default. It sends you a notification with a bible verse that has been selected for you each morning."
+                        android:textColor="@color/dark_grey"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <TextView
+                        android:id="@+id/disclaimer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/notification_description"
+                        android:layout_marginStart="@dimen/activity_generic_margin_26"
+                        android:layout_marginEnd="@dimen/activity_generic_margin_start"
+                        android:layout_marginBottom="@dimen/activity_generic_margin_small"
+                        android:text="Note: When the box to the left of a setting is checked, that setting is enabled until the box is unchecked."
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/text_size_18" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/ad_layout"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="end|bottom"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_read"
+                android:tint="@color/card_background"
+                app:backgroundTint="@color/button_color" />
+
+            <LinearLayout
+                android:id="@+id/ad_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true">
+
+                <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/adView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_ad_portrait"
+                    ads:adSize="SMART_BANNER"
+                    ads:adUnitId="@string/settings_banner" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+</RelativeLayout>

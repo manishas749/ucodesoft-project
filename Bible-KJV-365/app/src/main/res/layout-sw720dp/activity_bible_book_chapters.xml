@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_background"
+    android:orientation="vertical"
+    tools:context=".BibleBookActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/activity_generic_size_56"
+        android:background="@color/app_bar"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/app_bar"
+            android:elevation="0dp"
+            android:theme="@style/TipCalcAppBarStyle"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+            <TextView
+                android:id="@+id/chapter_label_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapters"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chapter_header_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:background="#fafafa"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/chapter_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/activity_generic_margin_small"
+            android:background="#0000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/card_background"
+                android:paddingTop="8dp"
+                android:textAlignment="center"
+                android:textColor="@color/darker_grey"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_above="@id/gridView"
+        android:layout_marginTop="0dp"
+        android:background="@color/light_grey" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ad_layout"
+        android:layout_below="@+id/chapter_header_card_view"
+        android:background="@color/card_background"
+        android:clipToPadding="false"
+        android:columnWidth="60dp"
+        android:numColumns="auto_fit"
+        android:paddingBottom="@dimen/activity_generic_size_72" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ad_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_home_light"
+        android:tint="@color/card_background"
+        app:backgroundTint="@color/button_color" />
+
+    <LinearLayout
+        android:id="@+id/ad_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_ad_portrait"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/bible_chapters_banner" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

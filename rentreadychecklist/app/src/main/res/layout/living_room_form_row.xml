@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/background_color"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="10dp"
+    android:paddingRight="16dp">
+
+    <LinearLayout
+        android:id="@+id/itemLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/itemLinearLayoutWithButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/formItemText"
+                style="@style/new_checklist_style"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:text="@string/fence"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RadioGroup
+                android:id="@+id/okNaFixRadioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/formItemText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/formItemText">
+
+                <RadioButton
+                    android:id="@+id/ok"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/ok_background_selector"
+                    android:button="@android:color/transparent"
+                    android:text="@string/ok"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/ok_radio_button_text_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/na"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/na_background_selector"
+                    android:button="@android:color/transparent"
+                    android:text="@string/na"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/na_radio_button_text_color"
+                    android:textSize="11sp" />
+
+                <RadioButton
+                    android:id="@+id/fix"
+                    android:layout_width="35dp"
+                    android:layout_height="25dp"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/fix_background_selector"
+                    android:button="@android:color/transparent"
+                    android:text="@string/fix"
+                    android:textAlignment="center"
+                    android:textColor="@drawable/fix_radio_button_text_color"
+                    android:textSize="11sp" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/uploadOkImageButton"
+            android:layout_width="110dp"
+            android:layout_height="32dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/previous_button_shape"
+            android:fontFamily="@font/roboto"
+            android:text="@string/upload_images"
+            android:textAllCaps="false"
+            android:textColor="@color/nwhs"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemLinearLayout" />
+
+
+    </LinearLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/checkBoxConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dish_cables_story_shape"
+        android:padding="6dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemLinearLayout">
+
+        <RadioGroup
+            android:id="@+id/itemRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RadioButton
+                android:id="@+id/checkboxA"
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/clean" />
+
+            <RadioButton
+                android:id="@+id/checkboxB"
+                style="@android:style/Widget.Holo.CompoundButton.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/replace" />
+
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ifReplaceSizeTextInputLayout"
+            style="@style/ThemeOverlay.Material3.AutoCompleteTextView.OutlinedBox"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:visibility="gone"
+            app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/box_stroke_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/ifReplaceSizeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:hint="@string/if_replace_size"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxEms="5"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                app:hintTextColor="@color/nwhs" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemExtraDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/background_color"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxConstraint">
+
+        <TextView
+            android:id="@+id/dimension"
+            style="@style/new_checklist_style"
+            android:layout_width="0dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/dimensions_blinds"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/dimensionEditText"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/et_custom"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/dimension"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/dimension" />
+
+        <TextView
+            android:id="@+id/color"
+            style="@style/new_checklist_style"
+            android:layout_width="59dp"
+            android:layout_height="22dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dimensionEditText" />
+
+
+        <EditText
+            android:id="@+id/itemEditTextA"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:background="@drawable/et_custom"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/color" />
+
+
+        <TextView
+            android:id="@+id/style"
+            style="@style/new_checklist_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/style"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemEditTextA" />
+
+        <EditText
+            android:id="@+id/itemEditTextB"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="style"
+            android:background="@drawable/et_custom"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/style"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/style" />
+
+
+        <TextView
+            android:id="@+id/wand"
+            style="@style/new_checklist_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:text="@string/wand"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/itemEditTextB" />
+
+
+        <EditText
+            android:id="@+id/itemEditTextC"
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:autofillHints="wand"
+            android:background="@drawable/et_custom"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:paddingHorizontal="13dp"
+            android:paddingVertical="13dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@id/wand"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/wand" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

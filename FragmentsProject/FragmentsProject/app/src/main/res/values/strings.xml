@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">FragmentsProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="login_to_continue">Login to continue</string>
+    <string name="sign_up">Sign up</string>
+    <string name="don_t_have_an_account">Don\'t have an account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">Create Account</string>
+    <string name="enter_first_name">Enter First Name</string>
+    <string name="register_now">Register Now</string>
+    <string name="AccountCreated">Account created successfully</string>
+    <string name="LoggedIn">Logged in Successfully</string>
+    <string name="selectCorrect">Please select answer</string>
+
+    <string name="Incorrect">UserName or Password is incorrect</string>
+    <string name="total_questions">Total Questions</string>
+    <string name="this_is_your_question">This is your Question</string>
+    <string name="_5">5</string>
+    <string name="permission_required">Permission Required!</string>
+    <string name="settings">settings</string>
+    <string name="permission_required_for_further_operations">Permission required for further operations.</string>
+    <string name="pick_images">Pick Images</string>
+    <string name="permission_required_for_further_operationss">Permission required for further operation\n</string>
+    <string name="dashboard_activity">DashBoard Activity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

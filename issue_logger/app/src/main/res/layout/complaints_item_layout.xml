@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="10dp"
+    app:strokeWidth="2dp"
+    android:layout_marginHorizontal="10dp"
+    app:strokeColor="#666666"
+    android:backgroundTint="@color/white"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/complaintImg"
+            android:layout_width="62dp"
+            android:layout_height="58dp"
+            android:src="@drawable/media"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/complaintUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:fontFamily="@font/jost"
+            android:text="@string/pothole"
+            android:textColor="#434343"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@id/progressIndicator"
+            app:layout_constraintStart_toEndOf="@+id/complaintImg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/muncipal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/jost"
+            android:text="@string/muncipal_corporation"
+            android:textColor="#434343"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/complaintImg"
+            app:layout_constraintTop_toBottomOf="@id/complaintUserName" />
+
+        <TextView
+            android:id="@+id/ComplaintDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/jost"
+            android:text="@string/july_13_2023_02_53_pm"
+            android:textColor="#434343"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/complaintImg"
+            app:layout_constraintTop_toBottomOf="@id/muncipal" />
+
+        <TextView
+            android:id="@+id/complaintStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.01"
+            android:text="@string/in_progress"
+            android:textColor="#6750A4"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/progressIndicator"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:src="@drawable/elli"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/complaintStatus"
+            app:layout_constraintTop_toTopOf="@+id/complaintStatus"
+            app:layout_constraintBottom_toBottomOf="@id/complaintStatus" />
+
+        <TextView
+            android:id="@+id/complaintDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:fontFamily="@font/jost"
+            android:visibility="gone"
+            android:text="@string/the_repercussions_of_the_garbage_problem_are_far_reac_hing_concerns_something_ales_more"
+            android:textSize="13sp"
+            app:layout_constraintTop_toBottomOf="@id/complaintImg" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintTop_toBottomOf="@id/complaintDescription"
+            app:layout_constraintStart_toStartOf="parent">
+        
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/upvoteButton"
+            android:theme="@style/radioButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:background="@drawable/upvote_checked_selector"
+            android:button="@android:color/transparent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/complaintDescription"/>
+
+        <TextView
+            android:id="@+id/upvoteCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_0"
+            android:textColor="#9D9D9D"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginStart="6dp"/>
+
+        <TextView
+            android:id="@+id/upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/upvotes"
+            app:layout_goneMarginStart="2dp"
+            android:textColor="#9D9D9D"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginStart="3dp"/>
+
+        <com.google.android.material.checkbox.MaterialCheckBox
+            android:id="@+id/downVoteButton"
+            android:theme="@style/radioButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="14dp"
+            android:background="@drawable/downvote_selector"
+            android:button="@android:color/transparent" />
+
+            <TextView
+                android:id="@+id/downVoteCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:fontFamily="@font/jost"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="#9D9D9D"
+                android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/downvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/downvotes"
+            android:textColor="#9D9D9D"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:textSize="14sp"
+            android:layout_marginStart="3dp"/>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

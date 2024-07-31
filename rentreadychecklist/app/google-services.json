@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "658984758021",
+    "project_id": "rentready-f0da8",
+    "storage_bucket": "rentready-f0da8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658984758021:android:3747871cbe80f8b6a9e56c",
+        "android_client_info": {
+          "package_name": "com.rentreadychecklist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658984758021-i7hrpf4vq2muj04850q36ob2cnl961fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9P7APpatNmrZpvoPmBz6pw03V0QUz90A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658984758021-i7hrpf4vq2muj04850q36ob2cnl961fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

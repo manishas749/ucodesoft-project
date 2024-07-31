@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.fragment:fragment-ktx:1.5.4@aar" external-system-id="GRADLE">
+    <CLASSES>
+      <root url="file://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/bd084278d5c47910d655d4f1eca81b75/transformed/fragment-ktx-1.5.4/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/bd084278d5c47910d655d4f1eca81b75/transformed/fragment-ktx-1.5.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/bd084278d5c47910d655d4f1eca81b75/transformed/fragment-ktx-1.5.4/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment-ktx/1.5.4/656ee3b3618f377f8671e3a678a0fce0c8f56b1e/fragment-ktx-1.5.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

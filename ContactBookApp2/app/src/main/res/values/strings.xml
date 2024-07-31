@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ContactBookApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="click_to_save">Click to Save</string>
+    <string name="newPicture">New Picture</string>
+    <string name="fromYourCamera">From your Camera</string>
+    <string name="imageType">image/*</string>
+
+
+    <string-array name="item_array">
+        <item>Friend</item>
+        <item>Work</item>
+        <item>Family</item>
+    </string-array>
+</resources>

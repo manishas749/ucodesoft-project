@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/app_bar"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:theme="@style/TipCalcAppBarStyle"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/chapter_header_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/top_layout"
+        android:background="#fafafa"
+        card_view:cardElevation="0dp">
+
+        <LinearLayout
+            android:id="@+id/chapter_header_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_layout"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/activity_generic_margin_small"
+            android:background="#0000"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chapter_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/card_background"
+                android:paddingTop="8dp"
+                android:textColor="@color/darker_grey"
+                android:textAlignment="center"
+                android:textSize="@dimen/text_size_24"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <View
+    android:id="@+id/top_view"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_above="@id/reading_plan_list_view"
+    android:layout_marginTop="0dp"
+    android:background="@color/light_grey" />
+
+    <ListView
+        android:id="@+id/reading_plan_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chapter_header_card_view"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/card_background"
+        android:textAlignment="textStart"
+        android:textColor="@color/text_color"
+        android:textSize="@dimen/text_size_28" />
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:orientation="vertical">
+
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            ads:adSize="SMART_BANNER"
+            ads:adUnitId="@string/main_activity_banner">
+
+        </com.google.android.gms.ads.AdView>
+
+    </LinearLayout>
+
+</RelativeLayout>

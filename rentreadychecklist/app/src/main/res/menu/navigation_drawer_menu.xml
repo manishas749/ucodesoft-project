@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/outsideFormFragment"
+        android:title="@string/outside"
+        android:icon="@drawable/outside">
+    </item>
+
+    <item
+        android:id="@+id/frontDoorsFormFragment2"
+        android:title="@string/front_doors"
+        android:icon="@drawable/frontdoor_icon">
+    </item>
+
+    <item
+        android:id="@+id/garageFormFragment"
+        android:title="@string/garage"
+        android:icon="@drawable/garage_icon">
+    </item>
+
+    <item
+        android:id="@+id/laundryRoomFormFragment"
+        android:title="@string/laundry_room"
+        android:icon="@drawable/laundryroom_icon">
+    </item>
+
+    <item
+        android:id="@+id/livingRoomFormFragment"
+        android:title="@string/living_room"
+        android:icon="@drawable/livingroom_icon">
+    </item>
+
+    <item
+        android:id="@+id/greatRoomFormFragment"
+        android:title="@string/great_room"
+        android:icon="@drawable/greatroom_icon">
+    </item>
+
+    <item
+        android:id="@+id/diningRoomFormFragment"
+        android:title="@string/dining_room"
+        android:icon="@drawable/diningroom_icon">
+    </item>
+
+    <item
+        android:id="@+id/kitchenFormFragment"
+        android:title="@string/kitchen"
+        android:icon="@drawable/kitchen_icon">
+    </item>
+
+    <item
+        android:id="@+id/miscellaneousFromFragment"
+        android:title="@string/miscellaneous"
+        android:icon="@drawable/miscellaneous_icon">
+    </item>
+
+    <item
+        android:id="@+id/numberOfBedroomsFragment"
+        android:title="@string/bedroom"
+        android:icon="@drawable/bedroom_icon">
+    </item>
+
+    <item
+        android:id="@+id/numberOfBathroomsFragment"
+        android:title="@string/bathroom"
+        android:icon="@drawable/bathroom_icon">
+    </item>
+
+
+
+</menu>

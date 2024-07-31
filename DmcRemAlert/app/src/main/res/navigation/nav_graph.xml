@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/deviceListFragment">
+
+    <fragment
+        android:id="@+id/deviceListFragment"
+        android:name="com.example.dmcremalert.fragments.DeviceListFragment"
+        android:label="fragment_device_list"
+        tools:layout="@layout/fragment_device_list" >
+        <action
+            android:id="@+id/action_deviceListFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/deviceListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/doseAllowedInputFragment"
+        android:name="com.example.dmcremalert.fragments.DoseAllowedInputFragment"
+        android:label="fragment_dose_allowed_input"
+        tools:layout="@layout/fragment_dose_allowed_input" />
+    <fragment
+        android:id="@+id/doseRateAllowedFragment"
+        android:name="com.example.dmcremalert.fragments.DoseRateAllowedFragment"
+        android:label="fragment_dose_rate_allowed"
+        tools:layout="@layout/fragment_dose_rate_allowed" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.dmcremalert.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+</navigation>

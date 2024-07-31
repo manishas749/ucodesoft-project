@@ -1,0 +1,78 @@
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/add_image_shape.xml" value="0.238" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/button_shape.xml" value="0.231" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/button_shape2.xml" value="0.231" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/button_shape3.xml" value="0.231" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/dish_cables_story_shape.xml" value="0.1945" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/fix_background_selector.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/fix_radio_button_shape_checked.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/fix_radio_button_shape_unchecked.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/fix_radio_button_text_color.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ic_baseline_check_box_outline_blank_24.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ic_greatroom_icon.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ic_header_icon.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/na_background_selecter.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/na_radio_button_shape_checked.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/na_radio_button_shape_unchecked.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/na_radio_button_text_color.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/next_button_shape.xml" value="0.238" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ok_background_selecter.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ok_background_selector.xml" value="0.1645" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ok_radio_button_shape_checked.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/ok_radio_button_text_color.xml" value="0.1625" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/previous_button_shape.xml" value="0.238" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/drawable/spinner_background.xml" value="0.1495" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/bathroom_item_row.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/bathroom_row.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/bedroom_item_row.xml" value="0.2153153153153153" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/bedroom_row.xml" value="0.264" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/content_navigation.xml" value="0.176" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/delete_dialog.xml" value="0.4" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_bathroom_form.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_bedroom_form.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_dining_room_form.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_email.xml" value="0.264" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_fix_model_sheet.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_front_doors_form.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_garage_form.xml" value="0.14814814814814814" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_greate_room_form.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_home.xml" value="0.25" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_kitchen_form.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_laundry_room_form.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_living_room_form.xml" value="0.264" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_miscellaneous_from.xml" value="0.20405405405405405" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_navigation_drawer.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_new_checklist.xml" value="0.264" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_number_of_bathrooms.xml" value="0.264" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_number_of_beddrooms.xml" value="0.21621621621621623" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_number_of_bedrooms.xml" value="0.17342342342342343" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_outside_form.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_saved_checklist.xml" value="0.4" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/fragment_splash_screen.xml" value="0.536" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/front_door_form_row.xml" value="0.37209302325581395" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/living_room_form_row.xml" value="0.4" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/navigation_drawer_header_layout.xml" value="0.2153153153153153" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/number_of_bedrooms.xml" value="0.2" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/outside_form_row.xml" value="0.4" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/progress_dialog.xml" value="0.4" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/relative.xml" value="0.72" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/saved_checklist_row.xml" value="0.536" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/layout/toolbar.xml" value="0.2153153153153153" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/menu/navigation_drawer_menu.xml" value="0.1" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/menu/popup_menu.xml" value="0.2153153153153153" />
+        <entry key="..\:/RentReadyChecklist/app/src/main/res/menu/saved_checklist_menu.xml" value="0.2" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" project-jdk-name="jbr-17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

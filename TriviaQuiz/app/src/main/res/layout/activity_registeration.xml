@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is the registration xml and inside constraint layout i have used scrollview to scroll the items -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".RegisterationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        android:paddingBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:id="@+id/layoutLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="27dp"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:text="@string/create_account"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="First Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="@string/enter_first_name"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="Last Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="Enter Last Name"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="User Name"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="Enter User Name"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="Date Of Birth"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/dateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="Enter Date Of Birth"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="Email ID"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailid"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="Enter Email ID"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/jost"
+                android:gravity="top"
+                android:text="@string/password"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="8dp"
+                android:inputType="text"
+                android:layout_weight="1"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:singleLine="true"
+                android:lines="1"
+                android:imeOptions="actionNext"
+                android:hint="Enter Password"
+                android:paddingHorizontal="15dp"
+                android:textColor="#434343"
+                android:textSize="15sp" />
+
+            <!-- Button to validate and the sign up -->
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="25dp"
+                android:background="@drawable/button_color"
+                android:backgroundTint="#53D08A"
+                android:fontFamily="@font/jost"
+                android:gravity="center"
+                android:letterSpacing="0.01"
+                android:text="@string/register_now"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text" />
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

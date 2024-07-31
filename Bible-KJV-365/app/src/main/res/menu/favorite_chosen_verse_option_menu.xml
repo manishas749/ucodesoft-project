@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/share_verse"
+        android:title="Share Verse" />
+    <item
+        android:id="@+id/copy_verse"
+        android:title="Copy Verse" />
+
+    <item android:id="@+id/remove_verse"
+        android:title="Remove Favorite" />
+
+    <item android:id="@+id/add_note"
+        android:title="Add note"/>
+</menu>

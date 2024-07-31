@@ -1,0 +1,102 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+    </style>
+
+    <style name="WindowAnimationTransition">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/button_color</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TipCalcAppBarStyleTablet10Inch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorPrimaryInverse">#ffffff</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="ToolbarTitleTextTablet10Inch" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="TipCalcAppBarStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:textColorPrimaryInverse">#ffffff</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="elevation">0dp</item>
+    </style>
+
+    <style name="CategoryTab" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/darker_gray</item>
+        <item name="tabSelectedTextColor">@android:color/black</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearance</item>
+        <item name="tabBackground">@drawable/tab_regular_theme</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    </style>
+
+    <style name="TabLayoutTextTablet10Inch" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabBackground">@drawable/tab_regular_theme</item>
+        <item name="android:textSize">36sp</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearanceTablet10Inch</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="CategoryTabNight" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@android:color/darker_gray</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="tabTextAppearance">@style/CategoryTabTextAppearanceNight</item>
+        <item name="tabBackground">@drawable/tab_layout_dark_mode</item>
+        <item name="android:textColorSecondary">@android:color/darker_gray</item>
+    </style>
+
+    <style name="MyTabLayout" parent="android:Widget">
+        <item name="tabBackground">@color/dark_grey</item>
+    </style>
+
+    <style name="CategoryTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#9e9e9e</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="CategoryTabTextAppearanceTablet10Inch" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#b0bec5</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textSize">36sp</item>
+    </style>
+
+    <style name="CategoryTabTextAppearanceNight" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">#9e9e9e</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+    </style>
+
+    <style name="menu_item_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="fontFamily">@font/noto_serif</item>
+    </style>
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "23159192212",
+    "project_id": "issue-logger-bd694",
+    "storage_bucket": "issue-logger-bd694.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23159192212:android:4d4851d8187c5133b71281",
+        "android_client_info": {
+          "package_name": "com.ucopdesoft.issuelogger"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAczLrcDfEFdJBIUkQEMM3aheTS7mWadkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:23159192212:android:1c98297a52ad4647b71281",
+        "android_client_info": {
+          "package_name": "com.ucopdesoft.issueloggers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAczLrcDfEFdJBIUkQEMM3aheTS7mWadkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

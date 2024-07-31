@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:context=".fragments.MainFragment">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:background="@color/white"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:elevation="5dp">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/complaintToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:menu="@menu/main_menu"
+                app:elevation="8dp"
+                app:title="">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:letterSpacing="0.01"
+                    android:text="@string/ayodhya_311"
+                    android:textColor="#0054AA"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+
+            </androidx.appcompat.widget.Toolbar>
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragmentContainer"
+                android:name="androidx.navigation.fragment.NavHostFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="20dp"
+                app:defaultNavHost="true"
+                android:background="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/bottomNavV"
+                app:layout_constraintTop_toBottomOf="@id/card"
+                app:navGraph="@navigation/bottom_nav_graph" />
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottomNavV"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                android:elevation="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:menu="@menu/nav_bottom_menu" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/addComplaintBtn"
+            style="@style/Widget.MaterialComponents.ExtendedFloatingActionButton"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="bottom|center"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#4B7BE5"
+            android:focusable="true"
+            android:focusedByDefault="true"
+            android:textAlignment="center"
+            app:cornerRadius="28dp"
+            app:elevation="20dp"
+            app:icon="@drawable/plus"
+            app:layout_constraintBottom_toBottomOf="@id/bottomNavV"
+            app:layout_constraintEnd_toEndOf="@id/bottomNavV"
+            app:layout_constraintStart_toStartOf="@id/bottomNavV"
+            tools:targetApi="o" />
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

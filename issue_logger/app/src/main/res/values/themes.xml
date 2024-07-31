@@ -1,0 +1,88 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.IssueLogger" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="android:statusBarColor">@color/white</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+        <item name="bottomNavigationStyle">@style/Widget.App.BottomNavigationView</item>
+        <item name="android:spotShadowAlpha">0.5</item>
+
+    </style>
+
+    <style name="Theme.IssueLogger" parent="Base.Theme.IssueLogger" />
+
+    <style name="progressDialog">
+        <item name="colorSecondary">@color/app_default</item>
+        <item name="colorControlActivated">@color/app_default</item>
+    </style>
+
+
+
+
+    <style name="checkBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorAccent">@color/app_default</item>
+        <item name="android:textColorSecondary">@color/white</item>
+    </style>
+
+
+    <style name="radioButton">
+        <item name="colorPrimary">@color/app_default</item>
+        <item name="colorControlActivated">@color/app_default</item>
+    </style>
+
+    <style name="tabLayout">
+        <item name="colorPrimary">@color/app_default</item>
+        <item name="colorControlActivated">@color/app_default</item>
+        <item name="colorSurface">@color/app_default</item>
+        <item name="colorOnSurface">@color/app_default</item>
+    </style>
+
+
+
+    <style name="bottomNav">
+        <item name="colorPrimary">@color/app_default</item>
+        <item name="colorControlActivated">@color/app_default</item>
+        <item name="icon">@color/app_default</item>
+        <item name="itemRippleColor">@color/app_default</item>
+        <item name="colorOnSecondaryContainer">@color/app_default</item>
+        <item name="colorSurface">@color/app_default</item>
+        <item name="itemActiveIndicatorStyle">@color/app_default</item>
+        <item name="colorOnSurface">@color/app_default</item>
+    </style>
+
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSurface">@color/app_default</item>
+        <item name="colorOnSurface">@color/app_default</item>
+        <item name="rippleColor">@color/bg_color</item>
+        <item name="iconTint">@color/app_default</item>
+        <item name="itemRippleColor">@color/bg_color</item>
+        <item name="colorPrimary">@color/app_default</item>
+        <item name="colorOnSecondaryContainer">@color/app_default</item>
+        <item name="indicatorColor">@color/bg_color</item>
+        <item name="itemActiveIndicatorStyle">@color/bg_color</item>
+        <item name="android:color">@color/bg_color</item>
+        <item name="colorSecondaryContainer">@color/gray_for_menu_light</item>
+    </style>
+
+    <style name="let_s_make_">
+        <item name="android:textSize">24sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">#434343
+        </item>
+    </style>
+
+    <style name="welcome_to_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#434343</item>
+    </style>
+
+</resources>

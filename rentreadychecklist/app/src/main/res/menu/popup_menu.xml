@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/sendPdf"
+        android:title="@string/send_pdf"
+        android:icon="@drawable/pdf_send_icon"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/downloadPdf"
+        android:title="@string/download_pdf"
+        android:icon="@drawable/pdf_download_icon"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/delete"
+        android:title="@string/delete"
+        android:icon="@drawable/deleteoutlined"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.activity:activity:1.5.1@aar" external-system-id="GRADLE">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/0a83b69a27fe2ed8981700407c1c48c5/transformed/activity-1.5.1/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/0a83b69a27fe2ed8981700407c1c48c5/transformed/activity-1.5.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/0a83b69a27fe2ed8981700407c1c48c5/transformed/activity-1.5.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/transforms-3/0a83b69a27fe2ed8981700407c1c48c5/transformed/activity-1.5.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/AndroidStudioProjects/FirestorePagination/.gradle/caches/modules-2/files-2.1/androidx.activity/activity/1.5.1/55c391fc0c910cc005c57b1767624a033fd0f013/activity-1.5.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

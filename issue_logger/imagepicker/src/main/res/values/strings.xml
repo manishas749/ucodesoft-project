@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="take_photo">Take Photo</string>
+    <string name="gallery">Select from gallery</string>
+    <string name="choose">Choose</string>
+    <string name="cancel">Cancel</string>
+    <string name="back_btn">back btn</string>
+    <string name="done">Done</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string name="illegal_arg_excep">Cannot set aspect ratio value to a number less than or equal to 0.</string>
+    <string name="flip_y">flip Y</string>
+    <string name="flip_x">flip X</string>
+    <string name="edit">Edit</string>
+</resources>

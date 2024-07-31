@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/more_time_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_generic_margin_start"
+            android:layout_marginBottom="@dimen/activity_generic_margin_start"
+            android:background="@color/light_grey"
+            android:text="@string/spent_enought_time"
+            android:textAlignment="center"
+            android:textColor="@color/card_background"
+            android:textSize="@dimen/text_size_28" />
+
+        <Button
+            android:id="@+id/more_time_take_me_back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_generic_margin_35"
+            android:layout_marginTop="@dimen/activity_generic_margin_start"
+            android:layout_marginEnd="@dimen/activity_generic_margin_35"
+            android:layout_marginBottom="@dimen/activity_generic_margin_start"
+            android:text="Take Me Back"
+            android:textAlignment="center"
+            android:textColor="@color/card_background"
+            android:textSize="@dimen/text_size_28"
+            android:textStyle="bold"
+            android:theme="@style/MyButtonStyle" />
+
+        <Button
+            android:id="@+id/more_time_exit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/activity_generic_margin_35"
+            android:layout_marginTop="@dimen/activity_generic_margin_start"
+            android:layout_marginEnd="@dimen/activity_generic_margin_35"
+            android:layout_marginBottom="@dimen/activity_generic_margin_start"
+            android:text="Exit"
+            android:textAlignment="center"
+            android:textColor="@color/card_background"
+            android:textSize="@dimen/text_size_28"
+            android:theme="@style/MyButtonStyle" />
+
+
+        <TextView
+            android:id="@+id/more_time_text_view_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_generic_margin_start"
+            android:layout_marginBottom="@dimen/activity_generic_margin_start"
+            android:background="@color/light_grey"
+            android:text="@string/live_in_the_word"
+            android:textAlignment="center"
+            android:textColor="@color/card_background"
+            android:textSize="@dimen/text_size_28" />
+
+    </LinearLayout>
+
+</RelativeLayout>

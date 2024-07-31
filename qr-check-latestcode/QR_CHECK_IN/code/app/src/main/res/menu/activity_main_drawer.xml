@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+
+        <item
+            android:id="@+id/nav_edit_profile"
+            android:icon="@drawable/ic_menu_edit_profile"
+            android:title="@string/menu_edit_profile" />
+        <item
+            android:id="@+id/nav_list_of_attendees"
+            android:icon="@drawable/view_list_of_attendees"
+            android:title="@string/menu_list_of_attendees" />
+        <item
+            android:id="@+id/nav_announcements"
+            android:icon="@drawable/ic_menu_announcements"
+            android:title="@string/announcements" />
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_menu_events"
+            android:title="@string/events" />
+
+
+        <item
+            android:id="@+id/notificationFragment2"
+            android:icon="@drawable/baseline_circle_notifications_24"
+            android:title="@string/send_notifications" />
+    </group>
+</menu>

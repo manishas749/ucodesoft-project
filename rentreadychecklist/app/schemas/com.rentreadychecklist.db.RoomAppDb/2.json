@@ -1,0 +1,106 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "6e5ecb576b54b00b3d280f1e4c32bbbc",
+    "entities": [
+      {
+        "tableName": "formInformation",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `HomeScreen` TEXT NOT NULL, `Outside` TEXT NOT NULL, `FrontDoors` TEXT NOT NULL, `Garage` TEXT NOT NULL, `LaundryRoom` TEXT NOT NULL, `LivingRoom` TEXT NOT NULL, `GreatRoom` TEXT NOT NULL, `DiningRoom` TEXT NOT NULL, `Kitchen` TEXT NOT NULL, `Miscellaneous` TEXT NOT NULL, `Bedroom` TEXT NOT NULL, `Bathroom` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "homeScreen",
+            "columnName": "HomeScreen",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "outside",
+            "columnName": "Outside",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "frontDoors",
+            "columnName": "FrontDoors",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "garage",
+            "columnName": "Garage",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "laundryRoom",
+            "columnName": "LaundryRoom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "livingRoom",
+            "columnName": "LivingRoom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "greatRoom",
+            "columnName": "GreatRoom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "diningRoom",
+            "columnName": "DiningRoom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "kitchen",
+            "columnName": "Kitchen",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "miscellaneous",
+            "columnName": "Miscellaneous",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bedroom",
+            "columnName": "Bedroom",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bathroom",
+            "columnName": "Bathroom",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '6e5ecb576b54b00b3d280f1e4c32bbbc')"
+    ]
+  }
+}

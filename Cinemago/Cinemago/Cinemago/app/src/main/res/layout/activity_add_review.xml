@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddReviewActivity"
+    android:orientation="vertical"
+    android:background="#A7A8AA">
+
+    <androidx.appcompat.widget.Toolbar
+        android:foregroundTint="@color/white"
+        android:background="#525E9F"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        app:title="Cinemago"
+        app:subtitleTextColor="@color/white"
+        app:titleTextColor="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark">
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:gravity="start"
+        android:padding="10dp"
+        android:textSize="15sp"
+        android:fontFamily="@font/jost"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/comment">
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/rating"
+        android:max="5"
+        android:backgroundTint="@color/white"
+        android:background="@color/white"
+        android:progressTint="@color/yellow">
+    </RatingBar>
+
+    <TextView
+        android:layout_margin="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By proceeding you also agree with the Terms of Service and Privacy Policy"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal">
+    </TextView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Close"
+        android:backgroundTint="#525E9F"
+        android:textColor="@color/white"
+        android:background="@drawable/button_color"
+        android:id="@+id/submit">
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

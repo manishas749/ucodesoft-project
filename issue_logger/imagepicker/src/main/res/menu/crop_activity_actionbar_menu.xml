@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+
+    <item
+        android:id="@+id/rotateLeft"
+        android:icon="@drawable/round_rotate_left_24"
+        android:title="@string/rotate_left"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/rotateRight"
+        android:icon="@drawable/round_rotate_right_24"
+        android:title="@string/rotate_right"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/flipX"
+        android:icon="@drawable/round_flip_24"
+        android:title="@string/flip_x"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/flipY"
+        android:icon="@drawable/round_flip_90_24"
+        android:title="@string/flip_y"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/done"
+        android:icon="@drawable/round_done_24"
+        android:title="@string/done"
+        app:showAsAction="always" />
+
+</menu>

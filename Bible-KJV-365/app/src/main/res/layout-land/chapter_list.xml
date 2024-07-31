@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/card_background"
+    tools:context=".BibleBookActivity">
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/footer"
+        android:layout_marginStart="@dimen/activity_generic_margin_start"
+        android:layout_marginEnd="@dimen/activity_generic_margin_start"
+        android:layout_marginTop="@dimen/activity_generic_margin_start"
+        android:background="@color/card_background"
+        android:numColumns="auto_fit"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/footer"
+        android:background="@color/background_color"
+        android:layout_height="@dimen/banner_ad_portrait"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"/>
+
+</RelativeLayout>

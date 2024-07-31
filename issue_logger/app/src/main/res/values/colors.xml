@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#6D6D6D</color>
+    <color name="gray_for_menu">#BF999999</color>
+    <color name="gray_for_menu_light">#4DC1C1C1</color>
+    <color name="app_default">#1778C9</color>
+    <color name="bg_color">#F5F5F5</color>
+    <color name="yellow">#F0F063</color>
+    <color name="green">#8CFF8C</color>
+    <color name="red">#F85252</color>
+    <color name="text_dark">#434343</color>
+    <color name="terms">#4B7BE5</color>
+    <color name="resolved">#0B9C1A</color>
+    <color name="inProgress">#6750A4</color>
+    <color name="homeScreen">#4566B4</color>
+    <color name ="rejected">#FF0000</color>
+    <color name="upvote">#089716</color>
+    <color name="downvote">#9D9D9D</color>
+    <color name="downvote_red">#FF0000</color>
+
+
+
+
+</resources>

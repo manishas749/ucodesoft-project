@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+
+    app:startDestination="@id/myAccountFragment">
+
+
+    <fragment
+        android:id="@+id/myAccountFragment"
+        android:name="com.example.listerpros.fragments.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account"
+        >
+        <action
+            android:id="@+id/action_myAccountFragment_to_profileSettingsFragment"
+            app:destination="@id/profileSettingsFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileSettingsFragment"
+        android:name="com.example.listerpros.fragments.ProfileSettingsFragment"
+        android:label="fragment_profile_settings"
+        tools:layout="@layout/fragment_profile_settings" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.listerpros.fragments.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/timeSheetsFragment"
+        android:name="com.example.listerpros.fragments.TimeSheetFragment"
+        android:label="fragment_time_sheets"
+        tools:layout="@layout/fragment_time_sheets" />
+    <fragment
+        android:id="@+id/myJobsFragment"
+        android:name="com.example.listerpros.fragments.MyJobsFragment"
+        android:label="fragment_my_jobs"
+        tools:layout="@layout/fragment_my_jobs" >
+        <action
+            android:id="@+id/action_myJobsFragment_to_jobDetailsFragment"
+            app:destination="@id/jobDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobDetailsFragment"
+        android:name="com.example.listerpros.fragments.JobDetailsFragment"
+        android:label="fragment_job_details"
+        tools:layout="@layout/fragment_job_details" >
+        <action
+            android:id="@+id/action_jobDetailsFragment_to_addNotesFragment"
+            app:destination="@id/addNotesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNotesFragment"
+        android:name="com.example.listerpros.fragments.AddNotesFragment"
+        android:label="fragment_add_notes"
+        tools:layout="@layout/fragment_add_notes" />
+    <fragment
+        android:id="@+id/timeSheetMapFragment"
+        android:name="com.example.listerpros.fragments.TimeSheetMapFragment"
+        android:label="fragment_time_sheet_map"
+        tools:layout="@layout/fragment_time_sheet_map" />
+    <fragment
+        android:id="@+id/skipNoteFragment"
+        android:name="com.example.listerpros.fragments.SkipNoteFragment"
+        android:label="fragment_skip_note"
+        tools:layout="@layout/fragment_skip_note" />
+</navigation>

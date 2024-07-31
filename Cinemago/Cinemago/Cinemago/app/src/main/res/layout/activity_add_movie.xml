@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Layout for LoginActivity -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="Add New Movie"
+        android:textColor="#525E9F"
+        android:textSize="30sp"
+        android:fontFamily="@font/jost"
+        android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/jost"
+            android:hint="Enter Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingHorizontal="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/jost"
+            android:hint="Enter Description"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingHorizontal="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/duration"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/jost"
+            android:hint="Enter Duration"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingHorizontal="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/jost"
+            android:hint="Enter Language"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:lines="1"
+            android:paddingHorizontal="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/ticketprice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/textview_shape"
+            android:fontFamily="@font/jost"
+            android:hint="Enter Ticket Price"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:lines="1"
+            android:paddingHorizontal="15dp"
+            android:singleLine="true"
+            android:textColor="@color/black"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jost"
+        android:textColor="#525E9F"
+        android:textSize="15sp"
+        android:layout_marginStart="10dp"
+        android:text="@string/enter_day_and_time"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp">
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#E6DFDF"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:hint="Monday 24 May 2024"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:gravity="center_horizontal"
+                android:lines="1"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:paddingHorizontal="10dp"
+                android:textColor="@color/black"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:background="@drawable/textview_shape"
+                android:fontFamily="@font/jost"
+                android:hint="10 PM"
+                android:paddingHorizontal="10dp"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="5dp"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:lines="1"
+                android:singleLine="true"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/adddaytime"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:background="@drawable/button_color"
+            android:backgroundTint="#525E9F"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/jost"
+            android:text="Add Show Times" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Day And Time"
+        android:textColor="#525E9F"
+        android:textSize="15sp"
+        android:fontFamily="@font/jost"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="left"
+        android:id="@+id/daytimetext">
+    </TextView>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_color"
+            android:backgroundTint="#525E9F"
+            android:fontFamily="@font/jost"
+            android:gravity="center"
+            android:letterSpacing="0.01"
+            android:text="Add"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

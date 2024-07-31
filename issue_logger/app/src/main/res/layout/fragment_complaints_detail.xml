@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".fragments.ComplaintsDetailFragment">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/backButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/arrow_back_24px"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="21dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/details"
+                android:textStyle="bold"
+                android:layout_marginTop="21dp"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/jost"
+                android:textSize="18sp"
+                android:textColor="#1D1B20"
+                android:lineSpacingExtra="2sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/backButton"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/ComplaintViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="173dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:background="#D9D9D9"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layout1" />
+
+        <LinearLayout
+            android:id="@+id/SliderDots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/ComplaintViewPager"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="horizontal">
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintTop_toBottomOf="@+id/SliderDots"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/complaintUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pothole"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jost"
+                android:lineSpacingExtra="-2sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/complaintStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resolved"
+                android:textColor="@color/resolved"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/progressIndicator"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@drawable/frame_2274"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/complaintStatus"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="@id/complaintStatus"/>
+
+            <TextView
+                android:id="@+id/muncipal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:text="@string/muncipal_corporation"
+                android:textColor="#434343"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/complaintUserName" />
+
+            <TextView
+                android:id="@+id/ComplaintDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jost"
+                android:text="@string/july_13_2023_02_53_pm"
+                android:textColor="#434343"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/muncipal" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/jost"
+                android:lineSpacingExtra="-2sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@id/ComplaintDate" />
+            
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/fetchLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Location"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/_90_eagle_street_society_sec_28c_chd"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jost"
+                android:lineSpacingExtra="-2sp"
+                android:textColor="#747474"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:layout_marginTop="18dp"
+                android:fontFamily="@font/jost"
+                android:lineSpacingExtra="-2sp"
+                android:textColor="#000000"
+                app:layout_constraintTop_toBottomOf="@id/fetchLocation" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/addDescription"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/Description"
+                app:layout_constraintStart_toStartOf="parent"
+                android:text="@string/the_repercussions_of_the_garbage_problem_are_far_reaching_and_extend_beyond_aesthetic_concerns_the_stagnant_waste_attracts_pests_and_vermin_leading_to_an_increase_in_disease_transmission"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jost"
+                android:lineSpacingExtra="-2sp"
+                android:textColor="#747474"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintTop_toBottomOf="@id/addDescription"
+                app:layout_constraintStart_toStartOf="parent">
+
+
+
+                <TextView
+                    android:id="@+id/upvoteCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_0"
+                    android:textColor="#089716"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:id="@+id/upvote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upvotes"
+                    app:layout_goneMarginStart="2dp"
+                    android:textColor="#089716"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginStart="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/downVoteCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:text="@string/_0"
+                    android:textColor="#9D9D9D"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/downvote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/downvotes"
+                    android:textColor="#9D9D9D"
+                    android:fontFamily="@font/jost"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:layout_marginStart="3dp"/>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
+

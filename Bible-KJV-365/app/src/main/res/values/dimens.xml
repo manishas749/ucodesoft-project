@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin_start">16dp</dimen>
+    <dimen name="activity_horizontal_margin_end">16dp</dimen>
+    <dimen name="activity_horizontal_margin_middle">16dp</dimen>
+    <dimen name="activity_vertical_margin_start">16dp</dimen>
+    <dimen name="activity_vertical_margin_end">16dp</dimen>
+    <dimen name="activity_vertical_margin_middle">16dp</dimen>
+    <dimen name="activity_generic_margin_start">16dp</dimen>
+    <dimen name="activity_generic_margin_end">16dp</dimen>
+    <dimen name="activity_generic_margin_small">8dp</dimen>
+    <dimen name="activity_generic_margin_4">4dp</dimen>
+    <dimen name="activity_generic_margin_6">6dp</dimen>
+    <dimen name="activity_generic_margin_10">10dp</dimen>
+    <dimen name="activity_generic_margin_12">12dp</dimen>
+    <dimen name="activity_generic_margin_20">20dp</dimen>
+    <dimen name="activity_generic_margin_28">28dp</dimen>
+    <dimen name="activity_generic_margin_26">26dp</dimen>
+    <dimen name="activity_generic_margin_14">14dp</dimen>
+    <dimen name="activity_generic_margin_95">95dp</dimen>
+    <dimen name="activity_generic_margin_75">75dp</dimen>
+    <dimen name="activity_generic_margin_18">18dp</dimen>
+    <dimen name="activity_generic_padding_14">14dp</dimen>
+    <dimen name="activity_generic_padding_10">10dp</dimen>
+    <dimen name="activity_generic_padding_8">8dp</dimen>
+    <dimen name="activity_generic_margin_5">5dp</dimen>
+    <dimen name="activity_generic_layout_height24">24dp</dimen>
+    <dimen name="activity_generic_size_192">192dp</dimen>
+    <dimen name="activity_generic_size_200">200dp</dimen>
+    <dimen name="activity_generic_size_48">48dp</dimen>
+    <dimen name="activity_generic_size_72">72dp</dimen>
+    <dimen name="activity_generic_size_56">56dp</dimen>
+    <dimen name="activity_generic_size_92">92dp</dimen>
+    <dimen name="activity_generic_margin_35">35dp</dimen>
+
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_22">22sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_26">26sp</dimen>
+    <dimen name="text_size_28">28sp</dimen>
+    <dimen name="text_size_30">30sp</dimen>
+    <dimen name="banner_ad_portrait">50dp</dimen>
+    <dimen name="banner_ad_landscape">32dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+
+
+</resources>

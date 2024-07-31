@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">QR_check_in</string>
+    <string name="check_in">Check-In</string>
+    <string name="organize_event">Organize Event</string>
+    <string name="enter_your_name">Enter your name:</string>
+    <string name="i_am_admin">I am admin</string>
+    <string name="submit">Submit</string>
+    <string name="enter_event_name">Enter event name:</string>
+    <string name="enter_event_description">Enter event description:</string>
+    <string name="upload_poster">Upload Poster</string>
+    <string name="reuse_qr_code">Reuse QR Code</string>
+    <string name="generate_qr_code">Generate QR Code</string>
+    <string name="view_list_of_attendees">View List of Attendees</string>
+    <string name="share_qr_code">Share QR Code</string>
+    <string name="map">Map</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="share_promotional_qr_code">Share Promotional QR Code</string>
+    <string name="geo_location_tracking">Geo-location Tracking</string>
+    <string name="generate_promotional_qr_code">Generate Promotional QR Code</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="event_description">Event Description</string>
+    <string name="event_name">Event Name</string>
+    <string name="your_name">Your Name</string>
+    <string name="confirm">confirm</string>
+    <string name="cancel">cancel</string>
+    <string name="app_header">QR_Check_In</string>
+
+    <string name="name">user_Name</string>
+    <string name="contact_information">User Contact Information (Phone No.)</string>
+    <string name="address">User Address</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="enable_geolocation_tracking">Enable Geolocation Tracking</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="user_settings">User Settings</string>
+
+    <string name="title_activity_event">EventActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_list_of_attendees">List Of Attendees</string>
+    <string name="settings_button_description">Description of the settings button</string>
+
+
+    <string name="scan_button">Scan</string>
+    <string name="attendee_selection">User Options</string>
+
+
+    <string name="poster_preview" />
+    <string name="event_poster_preview_desc" />
+    <string name="upload_event_poster" />
+    <string name="confirm_delete">Confirm Delete</string>
+    <string name="menu_edit_profile">Edit Profile</string>
+    <string name="profiles">Profiles</string>
+    <string name="Announcements" />
+    <string name="announcements">Announcements</string>
+    <string name="events">Events</string>
+    <string name="save_button_text">Save</string>
+    <string name="profile_picture">Profile picture</string>
+    <string name="event_poster">Event Poster</string>
+
+    <string name="profile_name">Name</string>
+    <string name="profile_address">Email</string>
+    <string name="profile_phone_number">Phone Number</string>
+    <string name="profile_homepage">Homepage</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_remove_pic">Remove Picture</string>
+    <string name="send_notifications">Send Notifications</string>
+    <string name="default_notification_list">Default Notification List</string>
+    <string name="custom_notification">Custom Notification</string>
+    <string name="notification_title">Notification Title</string>
+
+</resources>

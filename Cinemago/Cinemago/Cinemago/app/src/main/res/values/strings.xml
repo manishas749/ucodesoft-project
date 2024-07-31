@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Cinemago</string>
+    <string name="open">Open navigation drawer</string>
+    <string name="close">Close navigation drawer</string>
+    <string name="login_to_your_account">Login to your account</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="already_have_an_account_login">Already have an account? Login</string>
+    <string name="enter_day_and_time">Enter Day And Time</string>
+    <string name="select_seat">Select Seat</string>
+    <string name="no_upcoming_movies">No Upcoming Movies</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirmed">Confirmed</string>
+</resources>
